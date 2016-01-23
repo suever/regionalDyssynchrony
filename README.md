@@ -26,5 +26,3 @@ Any bugs or issues can be reported using the [bug tracker](https://github.com/su
 
 ### License ###
 This software is released under the 3-Clause BSD License. Please see the [LICENSE](LICENSE) file for more information.
-
-### Citations ###
