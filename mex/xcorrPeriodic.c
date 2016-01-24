@@ -50,7 +50,7 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
     double alpha, one = 1.0, zero = 0.0;
 
     int maxlag, minlag;
-    int32_t *lags, lag;
+    INT32_T *lags, lag;
 
     size_t i, j, row, ind, nPoints, nLags, inc = 1;
 
@@ -127,7 +127,7 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
     plhs[0] = mxCreateDoubleMatrix(nLags, 1, mxREAL);
     plhs[1] = mxCreateNumericMatrix(nLags, 1, mxINT32_CLASS, mxREAL);
     C       = mxGetPr(plhs[0]);
-    lags    = (int32_t*)mxGetPr(plhs[1]);
+    lags    = (INT32_T*)mxGetPr(plhs[1]);
 
     row = 0;
     for(lag=minlag; lag<=maxlag; lag++)
